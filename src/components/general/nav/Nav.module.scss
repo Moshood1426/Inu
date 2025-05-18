@@ -1,0 +1,68 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.nav {
+  position: relative;
+
+  &_container {
+    margin: 0 auto;
+    padding: 1.2em 0;
+    position: relative;
+  }
+
+  &_menu__burger {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 4px;
+    background: $black-900;
+    transition: $transition;
+    display: none;
+    z-index: 6;
+    cursor: pointer;
+
+    @include media("<=miniDesktop") {
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      width: 40px;
+      height: 4px;
+      background: $black-900;
+      transition: $transition;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      width: 25px;
+      height: 4px;
+      background: $black-900;
+      transition: $transition;
+    }
+
+    &.open {
+      transform: rotate(720deg);
+      background: transparent;
+      position: fixed;
+      top: 40.2px;
+      right: 10%;
+      transform: translateX(100%);
+
+      &::before {
+        transform: rotate(45deg) translate(5px, 8px);
+      }
+
+      &::after {
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -7px);
+      }
+    }
+  }
+}

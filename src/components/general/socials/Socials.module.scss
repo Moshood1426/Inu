@@ -1,0 +1,87 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.socials {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+
+  @include media(">=miniDesktop") {
+    margin: 0;
+    text-align: left;
+  }
+
+  &_brand {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+
+    @include media("<=miniDesktop") {
+      display: none;
+    }
+
+    &_logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.3;
+
+      small {
+        font-size: $extraSmallText;
+        color: $black-400;
+        text-transform: initial;
+      }
+    }
+  }
+
+  &_list {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.6rem;
+    color: $black-700;
+    width: 100%;
+
+    @include media(">=tablet") {
+      gap: 4rem;
+    }
+
+    @include media(">=miniDesktop") {
+      border-top: 1px solid $grey-300;
+      border-bottom: 1px solid $grey-300;
+      justify-content: flex-start;
+      padding: 0.45rem 0;
+      margin-top: 1rem;
+      gap: 2.95rem;
+    }
+
+    &_item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      @include media(">=miniDesktop") {
+        font-size: $smallText;
+      }
+    }
+  }
+
+  &_name,
+  &_arrow {
+    display: block;
+
+    @include media("<=miniDesktop") {
+      display: none;
+    }
+  }
+
+  &_text {
+    font-size: $extraSmallText;
+    color: $black-300;
+
+    @include media(">=miniDesktop") {
+      display: none;
+    }
+  }
+}

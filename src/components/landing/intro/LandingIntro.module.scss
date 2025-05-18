@@ -1,0 +1,144 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.intro {
+  &_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    max-width: 750px;
+    font-size: $smallText;
+    height: 100vh;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    @include media(">=miniDesktop") {
+      width: 100%;
+      padding: 10% 5% 10% 8%;
+      margin: 0;
+      max-width: 600px;
+    }
+
+    @include media(">=desktop") {
+      padding: 10% 5% 10% 15%;
+    }
+  }
+
+  &_item {
+    width: 100%;
+    position: relative;
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      align-items: center;
+      text-align: center;
+      width: 90%;
+      margin: 0 auto;
+
+      &_text {
+        color: $black-500;
+      }
+    }
+
+    @include media(">=miniDesktop") {
+      &_nav {
+        display: none;
+      }
+
+      &_content {
+        width: 100%;
+        margin: 0;
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      &_img {
+        display: none;
+      }
+    }
+  }
+
+  &_btn {
+    width: fit-content;
+    padding: 0.75rem 1.3rem;
+
+    svg {
+      transform: translateY(15%);
+    }
+
+    @include media(">=miniDesktop") {
+      display: none;
+    }
+  }
+
+  h3 {
+    margin-bottom: 0.45rem;
+  }
+
+  p {
+    max-width: none;
+    margin: 0;
+  }
+
+  &_bignav {
+    li {
+      margin: 1.2rem 0;
+      text-transform: uppercase;
+    }
+
+    &_list {
+      &_item {
+        display: flex;
+        align-items: center;
+        letter-spacing: 2px;
+        color: $grey-900;
+        transition: $transition;
+
+        &_active {
+          color: $black-900;
+          font-family: $ApercuMedium;
+
+          a::before {
+            width: 4rem;
+          }
+        }
+
+        &:hover {
+          color: $black-900;
+          font-family: $ApercuMedium;
+
+          a::before {
+            width: 4rem;
+          }
+        }
+      }
+
+      &_link {
+        // position: relative;
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          position: relative;
+          width: 2.5rem;
+          height: 1px;
+          background-color: $black-500;
+          margin: 0 0.95rem;
+          transition: $transition;
+        }
+      }
+    }
+
+    @include media("<=miniDesktop") {
+      display: none;
+    }
+  }
+}

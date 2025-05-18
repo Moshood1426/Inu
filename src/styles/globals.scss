@@ -1,0 +1,388 @@
+@import "./variables.scss";
+@import "./breakpoints.scss";
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  // visibility: hidden;
+  user-select: none;
+  background: $grey-100;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: $ApercuLight "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  //   width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.2rem;
+  font-family: $ApercuDark;
+  line-height: 1.3;
+  text-transform: capitalize;
+  letter-spacing: $letterSpacing;
+}
+
+h1 {
+  font-size: 2.652rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+p {
+  margin-bottom: 1.4rem;
+  max-width: 40em;
+  font-family: $ApercuLight, "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+small {
+  margin: 0;
+  font-family: $ApercuLight, "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul:empty {
+  margin: 0;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  color: $white;
+  background: $black-700;
+  letter-spacing: $letterSpacing;
+  padding: 0.375rem 0.75rem;
+  //   box-shadow: $shadow-1;
+  transition: $transition;
+  text-transform: capitalize;
+  display: block;
+  font-family: $ApercuLight, "sans-serif";
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+
+  &:hover {
+    background: $black-900;
+    box-shadow: $shadow-2;
+  }
+
+  &_light {
+    background: transparent;
+    border: 1px solid $black-400;
+    color: $black-600;
+
+    &:hover {
+      background: #f2f7f2;
+    }
+  }
+
+  &-block {
+    height: 35px;
+  }
+}
+
+.landing {
+  // height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  // box-sizing: border-box;
+}
+
+.small-landing {
+  @include media(">=miniDesktop") {
+    display: none;
+  }
+}
+
+.big-landing {
+  // background: url(".././assets/images/bgImg2.jpg");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+
+  @include media("<=miniDesktop") {
+    display: none;
+  }
+}
+
+.form {
+  width: 90%;
+  max-width: 600px;
+  //margin: 3rem auto;
+  transition: $transition;
+
+  @include media(">=phone") {
+    &_dual_row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+      transition: $transition;
+    }
+  }
+
+  &_title {
+    font-family: $ApercuMedium;
+    color: $primary-500;
+  }
+
+  &_row {
+    margin-bottom: 1rem;
+  }
+
+  &_label {
+    display: block;
+    font-size: $smallText;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: $letterSpacing;
+  }
+
+  &_input,
+  &_select {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    background: $grey-100;
+    border: 1px solid $black-100;
+    color: $black-600;
+    font-family: $ApercuLight;
+    font-size: 16px;
+    max-width: 25em;
+    border-radius: $borderRadius;
+  }
+
+  &_input,
+  &_select,
+  &_btn {
+    height: 45px;
+  }
+
+  &_text_area {
+    height: 100px;
+  }
+
+  &_file_input {
+    display: none;
+  }
+
+  &_file_label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid $primary-300;
+    padding: 10px;
+    color: $primary-600;
+    box-shadow: $shadow-1;
+    margin-bottom: 1.5rem;
+  }
+}
+
+select,
+textarea,
+input {
+  font-size: 16px;
+}
+
+textarea {
+  font-family: $ApercuLight;
+}
+
+.form_input {
+  box-shadow: $shadow-1;
+}
+
+.create_event_form {
+  margin-bottom: 4rem;
+}
+
+::placeholder {
+  font-family: inherit;
+  color: $black-300;
+  text-transform: capitalize;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px $primary-200 inset !important;
+  box-shadow: $shadow-1 inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: $black-100 !important;
+}
+
+.nav_form_input {
+  height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* alerts */
+.alert {
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 1rem;
+  border-color: transparent;
+  border-radius: $borderRadius;
+  text-align: center;
+  letter-spacing: $letterSpacing;
+  font-family: $AirBnBLight;
+  font-size: $smallText;
+}
+
+.alert-danger {
+  color: $red-dark;
+  background: $red-light;
+}
+.alert-success {
+  color: $green-dark;
+  background: $green-light;
+}
+
+.loader {
+  border: 8px solid rgba(37, 40, 115, 0.71); /* Light grey */
+  border-top: 8px solid #fff; /* Blue */
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.clr_form {
+  text-align: center;
+  background: none;
+}
+
+.submit_form {
+  width: 100%;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+/* Style the scrollbar track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background-color: $grey-200;
+}
+
+/* Style the scrollbar thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background-color: $grey-400;
+  border-radius: 5px;
+}
+
+// .container {
+//   width: 1560px;
+//   min-width: 1560px;
+//   margin: 0 auto;
+//   height: 100%;
+//   @include media("<=1560px") {
+//     width: 1280px;
+//     min-width: 1280px;
+//   }
+//   @include media("<=desktop") {
+//     width: 1080px;
+//     min-width: 1080px;
+//   }
+//   @include media("<=1080px") {
+//     width: 100%;
+//     min-width: 100%;
+//   }
+// .row {
+//   display: flex;
+//   height: 100%;
+//   padding: 0 32px;
+//   @include media("<=phone") {
+//     padding: 0 16px;
+//   }
+// }
+// .v-center {
+//   align-items: center;
+// }
+// .space-between {
+//   justify-content: space-between;
+// }
+// }
+
+// .container-fluid {
+//   width: 100%;
+//   height: 100%;
+//   .row {
+//     display: flex;
+//     height: 100%;
+//   }
+// }

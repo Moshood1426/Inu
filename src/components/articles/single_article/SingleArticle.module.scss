@@ -1,0 +1,67 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.article {
+  margin: 4% 10px;
+  width: auto;
+  box-shadow: $shadow-2;
+
+  @include media(">=miniDesktop") {
+    margin: 0;
+  }
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+    padding: 2.5rem;
+    background-color: $grey-200;
+  }
+
+  &_item {
+  }
+
+  &_intro {
+    display: flex;
+    flex-direction: column;
+
+    &_category {
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 0.65rem;
+      color: $black-600;
+      font-family: $AirBnBMedium;
+    }
+
+    &_date {
+      font-weight: 500;
+      color: $grey-900;
+      font-size: $extraSmallText;
+
+      svg {
+        margin-right: 5px;
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  &_details {
+    h5 {
+      line-height: 1.5;
+      margin: 0 0 0.2rem;
+    }
+
+    small {
+      margin: 0;
+      padding: 0;
+      line-height: 0;
+      color: $black-400;
+
+      svg {
+        transform: translateY(15%);
+        margin-right: 5px;
+      }
+    }
+  }
+}

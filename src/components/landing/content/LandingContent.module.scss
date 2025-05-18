@@ -1,0 +1,18 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.landing {
+  &_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &_item {
+     
+    }
+  }
+
+  &_articles {
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
