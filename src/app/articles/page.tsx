@@ -1,14 +1,18 @@
 import Articles from "@/components/articles/Articles";
-import Nav from "@/components/general/nav/Nav";
 import Socials from "@/components/general/socials/Socials";
+import LandingContent from "@/components/landing/content/LandingContent";
 import React from "react";
 
 const page = () => {
   return (
-    <div style={{ position: "relative" }}>
-      <Nav />
-      <Articles />
-      <Socials />
+    <div>
+      <div className="small-landing">
+        <Articles />
+        <Socials />
+      </div>
+      <div className="big-landing">
+        <LandingContent />
+      </div>
     </div>
   );
 };

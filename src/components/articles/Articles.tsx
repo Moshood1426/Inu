@@ -3,6 +3,7 @@ import SingleArticle from "./single_article/SingleArticle";
 import classes from "./Articles.module.scss";
 import Link from "next/link";
 import { IoCaretForwardOutline } from "react-icons/io5";
+import Nav from "../general/nav/Nav";
 
 const articles = [
   {
@@ -46,6 +47,9 @@ const Articles = () => {
   return (
     <div className={classes.articles}>
       <div className={classes.articles_container}>
+        <div className={classes.articles_nav}>
+          <Nav />
+        </div>
         <p className={classes.articles_label}>Articles</p>
         <div className={classes.articles_grid}>
           {articles.map((item) => (

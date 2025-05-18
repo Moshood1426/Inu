@@ -7,6 +7,7 @@
     margin: 0 auto;
     padding: 1.2em 0;
     padding-bottom: 0;
+    padding-top: 0;
     position: relative;
 
     @include media(">=miniDesktop") {
@@ -16,6 +17,14 @@
     }
 
     @include media(">=desktop") {
+    }
+  }
+
+  &_nav {
+    margin: 0 10px;
+    margin-bottom: 1rem;
+    @include media(">=miniDesktop") {
+      display: none;
     }
   }
 
@@ -36,10 +45,10 @@
     text-transform: uppercase;
     font-family: $AirBnBMedium;
     font-size: $smallText;
+    color: $grey-900;
 
     @include media(">=miniDesktop") {
       font-size: $extraSmallText;
-      color: $grey-900;
       margin-left: 0;
     }
   }

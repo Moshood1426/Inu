@@ -9,7 +9,13 @@ import Socials from "@/components/general/socials/Socials";
 import Nav from "@/components/general/nav/Nav";
 
 const LandingIntro = () => {
-  const [activeLink] = useState("projects");
+  const [activeLink, setActiveLink] = useState("projects");
+
+  const updateLink = (arg: string) => {
+    if (activeLink !== arg) {
+      setActiveLink(arg);
+    }
+  };
 
   return (
     <div className={classes.intro}>
@@ -44,7 +50,7 @@ const LandingIntro = () => {
 
         <div className={`${classes.intro_item} ${classes.intro_bignav}`}>
           <ul className={classes.intro_bignav_list}>
-            <li>
+            <li onClick={() => updateLink("projects")}>
               <small
                 className={`${classes.intro_bignav_list_item} ${
                   activeLink === "projects"
@@ -58,7 +64,7 @@ const LandingIntro = () => {
                 </Link>
               </small>
             </li>
-            <li>
+            <li onClick={() => updateLink("articles")}>
               <small className={classes.intro_bignav_list_item}>
                 <span>01</span>
                 <Link
@@ -69,7 +75,7 @@ const LandingIntro = () => {
                 </Link>
               </small>
             </li>
-            <li>
+            <li onClick={() => updateLink("about")}>
               <small className={classes.intro_bignav_list_item}>
                 <span>02</span>
                 <Link href="/about" className={classes.intro_bignav_list_link}>
@@ -77,7 +83,7 @@ const LandingIntro = () => {
                 </Link>
               </small>
             </li>
-            <li>
+            <li onClick={() => updateLink("contact")}>
               <small className={classes.intro_bignav_list_item}>
                 <span>03</span>
                 <Link
