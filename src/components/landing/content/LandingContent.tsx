@@ -4,6 +4,7 @@ import LandingIntro from "../intro/LandingIntro";
 import Articles from "@/components/articles/Articles";
 
 const LandingContent = () => {
+    
   return (
     <div className={classes.landing}>
       <div className={classes.landing_container}>
