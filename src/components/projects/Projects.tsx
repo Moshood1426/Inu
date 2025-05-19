@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Projects.module.scss";
-import Nav from "../general/nav/Nav";
+
 import SingleProject from "./SingleProject/SingleProject";
 import Link from "next/link";
 import { IoCaretForwardOutline } from "react-icons/io5";
@@ -54,10 +54,6 @@ const Projects = () => {
   return (
     <div className={classes.projects}>
       <div className={classes.projects_container}>
-        {/* <div className={classes.projects_nav}>
-          <Nav />
-        </div> */}
-
         <p className={classes.projects_label}>Projects</p>
 
         <div className={classes.projects_grid}>

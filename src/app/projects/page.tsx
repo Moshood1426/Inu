@@ -8,7 +8,10 @@ const page = () => {
   return (
     <div>
       <div className="small-landing">
-        <Nav />
+        <div className="nav">
+          <Nav />
+        </div>
+
         <Projects />
         <Socials />
       </div>

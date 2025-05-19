@@ -3,10 +3,12 @@
 @import "../../../styles/breakpoints.scss";
 
 .logo {
+  position: relative;
   font-size: 1.85rem;
   font-family: "Lobster", cursive;
   font-weight: 600;
   color: $black-800;
+  z-index: 6;
 
   @include media("<=tablet") {
     font-size: 1.5rem;

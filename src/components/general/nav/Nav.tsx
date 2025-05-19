@@ -12,12 +12,11 @@ const Nav = () => {
       <div className={classes.nav_container}>
         <Logo />
 
-        <div>
+        <div onClick={() => setShowSidebar(!showSideBar)}>
           <span
             className={`${classes.nav_menu__burger} ${
               showSideBar ? classes.open : ""
             }`}
-            onClick={() => setShowSidebar(!showSideBar)}
           ></span>
         </div>
       </div>

@@ -2,11 +2,48 @@
 @import "../../../../styles/breakpoints.scss";
 
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background-color: $grey-100;
   z-index: 4;
+
+  &_container {
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_list {
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: $AirBnBMedium;
+    color: $black-400;
+
+    li {
+      margin: 1.5rem 0;
+
+      &:hover {
+        color: $black-900;
+      }
+    }
+  }
+
+  &_active {
+    color: $black-900;
+  }
+
+  &_socials {
+    border-top: 1px solid $grey-500;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+  }
 }

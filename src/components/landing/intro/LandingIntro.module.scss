@@ -2,6 +2,16 @@
 @import "../../../styles/breakpoints.scss";
 
 .intro {
+  h2 {
+    @include media("<=miniDesktop") {
+      font-size: 1.953rem;
+    }
+
+    @include media("<=tablet") {
+      font-size: 1.563rem;
+    }
+  }
+
   &_container {
     position: relative;
     display: flex;
