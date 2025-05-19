@@ -80,6 +80,8 @@ small {
 ul {
   list-style-type: none;
   padding: 0;
+  font-family: $ApercuLight, "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 ul:empty {
@@ -142,10 +144,10 @@ ul:empty {
 }
 
 .big-landing {
-  // background: url(".././assets/images/bgImg2.jpg");
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center;
+  background: url(".././assets/images/bgImg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @include media("<=miniDesktop") {
     display: none;
