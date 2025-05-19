@@ -12,4 +12,19 @@
 
   &_container {
   }
+
+  &_title {
+    text-align: center;
+    margin: 1rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      font-size: 4rem;
+      max-width: 500px;
+      margin: 0;
+    }
+  }
 }

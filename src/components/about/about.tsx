@@ -1,17 +1,21 @@
 import React from "react";
 import classes from "./about.module.scss";
+import { IoIosArrowRoundBack } from "react-icons/io"
+import Link from "next/link";
 
 const About = () => {
   return (
     <div className={classes.about}>
       <div className={classes.about_container}>
-        <div className="big-landing">
+        <div className={classes.about_back} >
+          <Link href={"/"}>
+          <IoIosArrowRoundBack />
           <span>Back</span>
-          
+          </Link>
         </div>
-        <div>
+        <div className={classes.about_title}>
           <h3>Learn More About Us</h3>
-          <p>Our Inspiration, community and mission</p>
+          <small>Our Inspiration, community and mission</small>
         </div>
 
         <section>
