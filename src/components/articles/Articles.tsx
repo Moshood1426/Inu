@@ -50,7 +50,9 @@ const Articles = () => {
         <div className={classes.articles_nav}>
           <Nav />
         </div>
+
         <p className={classes.articles_label}>Articles</p>
+        
         <div className={classes.articles_grid}>
           {articles.map((item) => (
             <SingleArticle {...item} key={item.id} />

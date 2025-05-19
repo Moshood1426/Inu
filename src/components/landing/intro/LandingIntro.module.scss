@@ -104,7 +104,7 @@
           color: $black-900;
           font-family: $ApercuMedium;
 
-          a::before {
+          .active::before {
             width: 4rem;
           }
         }
@@ -112,8 +112,9 @@
         &:hover {
           color: $black-900;
           font-family: $ApercuMedium;
+          cursor: pointer;
 
-          a::before {
+          .active::before {
             width: 4rem;
           }
         }

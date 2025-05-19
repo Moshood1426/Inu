@@ -1,0 +1,83 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.projects {
+  &_container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.2em 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    position: relative;
+
+    @include media(">=miniDesktop") {
+      padding-top: 10%;
+      padding-bottom: 10%;
+      margin-left: 0;
+    }
+
+    @include media(">=desktop") {
+    }
+  }
+
+  &_nav {
+    margin: 0 10px;
+    margin-bottom: 1rem;
+    @include media(">=miniDesktop") {
+      display: none;
+    }
+  }
+
+  &_grid {
+    @include media(">=miniDesktop") {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.65em;
+    }
+
+    @include media(">=desktop") {
+    }
+  }
+
+  &_label {
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-family: $AirBnBMedium;
+    font-size: $smallText;
+    color: $grey-900;
+
+    @include media(">=miniDesktop") {
+      font-size: $extraSmallText;
+      margin-left: 0;
+    }
+  }
+
+  &_actions {
+    padding: 0 10px;
+    margin: 2.5rem auto;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+    @include media(">=miniDesktop") {
+      display: none;
+    }
+  }
+
+  &_btn {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    width: 100%;
+    padding: 0.55rem 1.3rem;
+    font-size: $smallText;
+
+    &_rot {
+      transform: scaleX(-1);
+    }
+  }
+}

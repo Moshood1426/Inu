@@ -50,50 +50,86 @@ const LandingIntro = () => {
 
         <div className={`${classes.intro_item} ${classes.intro_bignav}`}>
           <ul className={classes.intro_bignav_list}>
-            <li onClick={() => updateLink("projects")}>
-              <small
-                className={`${classes.intro_bignav_list_item} ${
-                  activeLink === "projects"
-                    ? classes.intro_bignav_list_item_active
-                    : ""
-                }`}
-              >
-                <span>00</span>
-                <Link href="/" className={classes.intro_bignav_list_link}>
-                  Projects
-                </Link>
-              </small>
-            </li>
-            <li onClick={() => updateLink("articles")}>
-              <small className={classes.intro_bignav_list_item}>
-                <span>01</span>
-                <Link
-                  href="/articles"
-                  className={classes.intro_bignav_list_link}
+            <Link href={"/projects"}>
+              <li onClick={() => updateLink("projects")}>
+                <small
+                  className={`${classes.intro_bignav_list_item} ${
+                    activeLink === "projects"
+                      ? classes.intro_bignav_list_item_active
+                      : ""
+                  }`}
                 >
-                  Articles
-                </Link>
-              </small>
-            </li>
-            <li onClick={() => updateLink("about")}>
-              <small className={classes.intro_bignav_list_item}>
-                <span>02</span>
-                <Link href="/about" className={classes.intro_bignav_list_link}>
-                  About Us
-                </Link>
-              </small>
-            </li>
-            <li onClick={() => updateLink("contact")}>
-              <small className={classes.intro_bignav_list_item}>
-                <span>03</span>
-                <Link
-                  href="/contact"
-                  className={classes.intro_bignav_list_link}
+                  <span>00</span>
+                  <span
+                    className={`${classes.intro_bignav_list_link} ${
+                      activeLink === "projects" && classes.active
+                    }`}
+                  >
+                    Projects
+                  </span>
+                </small>
+              </li>
+            </Link>
+            <Link href={"/articles"}>
+              <li onClick={() => updateLink("articles")}>
+                <small
+                  className={`${classes.intro_bignav_list_item} ${
+                    activeLink === "articles"
+                      ? classes.intro_bignav_list_item_active
+                      : ""
+                  }`}
                 >
-                  Contact Us
-                </Link>
-              </small>
-            </li>
+                  <span>01</span>
+                  <span
+                    className={`${classes.intro_bignav_list_link} ${
+                      activeLink === "articles" && classes.active
+                    }`}
+                  >
+                    Articles
+                  </span>
+                </small>
+              </li>
+            </Link>
+            <Link href={"/about"}>
+              <li onClick={() => updateLink("about")}>
+                <small
+                  className={`${classes.intro_bignav_list_item} ${
+                    activeLink === "about"
+                      ? classes.intro_bignav_list_item_active
+                      : ""
+                  }`}
+                >
+                  <span>02</span>
+                  <span
+                    className={`${classes.intro_bignav_list_link} ${
+                      activeLink === "about" && classes.active
+                    }`}
+                  >
+                    About us
+                  </span>
+                </small>
+              </li>
+            </Link>
+            <Link href={"/contact"}>
+              <li onClick={() => updateLink("contact")}>
+                <small
+                  className={`${classes.intro_bignav_list_item} ${
+                    activeLink === "contact"
+                      ? classes.intro_bignav_list_item_active
+                      : ""
+                  }`}
+                >
+                  <span>03</span>
+                  <span
+                    className={`${classes.intro_bignav_list_link} ${
+                      activeLink === "contact" && classes.active
+                    }`}
+                  >
+                    Contact Us
+                  </span>
+                </small>
+              </li>
+            </Link>
           </ul>
         </div>
 

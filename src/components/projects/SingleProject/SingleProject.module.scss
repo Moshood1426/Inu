@@ -1,0 +1,39 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.project {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  justify-content: space-between;
+  background-color: $grey-200;
+  margin-bottom: 10px;
+
+  &_title {
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+
+    h5 {
+      margin: 0;
+    }
+  }
+
+  &_creator {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.65rem;
+    color: $black-800;
+  }
+
+  &_footer {
+    margin-bottom: 3rem;
+    color: $grey-900;
+  }
+
+  //   h5 {
+  //     line-height: 1;
+  //     margin: 0 0 0.2rem;
+  //   }
+}
