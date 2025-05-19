@@ -8,38 +8,28 @@ import Nav from "../general/nav/Nav";
 const articles = [
   {
     id: 0,
-    category: "Article Category",
-    date: "January 01, 2022",
-    title: "Article Title",
+    category: "personal",
+    date: "May 15, 2025",
+    title: "My Learning Journey",
     time: "19 mins read",
+    img: "/images/web-img-1.jpg",
   },
   {
     id: 1,
-    category: "Article Category",
-    date: "January 01, 2022",
-    title: "Article Title",
+    category: "interviews",
+    date: "May 15, 2025",
+    title: "Experts Weigh In: The Future of Sustainable Architecture",
     time: "19 mins read",
+    img: "/images/web-img-3.jpg",
   },
   {
     id: 2,
     category: "Article Category",
     date: "January 01, 2022",
-    title: "Article Title",
+    title:
+      "Beyond the Build: Professionals Talk Sustainability in Architecture",
     time: "19 mins read",
-  },
-  {
-    id: 3,
-    category: "Article Category",
-    date: "January 01, 2022",
-    title: "Article Title",
-    time: "19 mins read",
-  },
-  {
-    id: 4,
-    category: "Article Category",
-    date: "January 01, 2022",
-    title: "Article Title",
-    time: "19 mins read",
+    img: "/images/web-img-2.jpg",
   },
 ];
 
@@ -54,8 +44,8 @@ const Articles = () => {
         <p className={classes.articles_label}>Articles</p>
 
         <div className={classes.articles_grid}>
-          {articles.map((item, index) => (
-            <SingleArticle {...item} index={index} key={item.id} />
+          {articles.map((item) => (
+            <SingleArticle {...item} key={item.id} />
           ))}
         </div>
 

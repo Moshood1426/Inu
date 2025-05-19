@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
-import introIcon from "@/assets/images/office-building.png";
+import introIcon from "@/assets/images/office-building.jpg";
 import classes from "./LandingIntro.module.scss";
 import { IoCaretForwardOutline } from "react-icons/io5";
 import Link from "next/link";
@@ -21,7 +21,7 @@ const LandingIntro = () => {
     if (overlayRef.current) {
       gsap.to(overlayRef.current, {
         clipPath: "inset(0 0 0 100%)", // fully clip from left to right
-        duration: .5,
+        duration: 0.5,
         ease: "power2.out",
       });
     }
@@ -63,11 +63,14 @@ const LandingIntro = () => {
                 ref={overlayRef}
                 className={classes.intro_title_overlay}
               ></span>
-              Lorem Ipsum gsa dolor sit amet, conse
+              Unpacking Sustainability Through Design: A Faculty Roundtable on
+              the MIAD Logics
             </h2>
             <p className={classes.intro_item_content_text}>
-              quis dnostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aut consequat consequat.
+              At La Salle’s School of Architecture (ETSALS), sustainability
+              isn’t a separate class. It’s a way of thinking. The Master in
+              Integrated Architectural Design (MIAD) program organizes its
+              approach around five core &quot;logics&quot;
             </p>
           </div>
 
@@ -90,10 +93,10 @@ const LandingIntro = () => {
                   <span>00</span>
                   <span
                     className={`${classes.intro_bignav_list_link} ${
-                      activeLink === "projects" && classes.active
+                      activeLink === "articles" && classes.active
                     }`}
                   >
-                    Projects
+                    My works
                   </span>
                 </small>
               </li>
@@ -110,7 +113,7 @@ const LandingIntro = () => {
                   <span>01</span>
                   <span
                     className={`${classes.intro_bignav_list_link} ${
-                      activeLink === "articles" && classes.active
+                      activeLink === "projects" && classes.active
                     }`}
                   >
                     Articles

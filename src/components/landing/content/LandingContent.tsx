@@ -7,7 +7,7 @@ import Articles from "@/components/articles/Articles";
 import Projects from "@/components/projects/Projects";
 
 const LandingContent = () => {
-  const [currentPath, setCurrentPath] = useState("");
+  const [currentPath, setCurrentPath] = useState<string | null>(null);
 
   const pathname = usePathname();
 
@@ -26,7 +26,7 @@ const LandingContent = () => {
         <div
           className={`${classes.landing_container_item} ${classes.landing_articles}`}
         >
-          {currentPath === "projects" || !currentPath ? (
+          {currentPath === "projects" || currentPath === "" ? (
             <Projects />
           ) : (
             <Articles />

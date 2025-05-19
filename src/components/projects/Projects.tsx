@@ -8,44 +8,34 @@ import { IoCaretForwardOutline } from "react-icons/io5";
 const content = [
   {
     id: 1,
-    title: "Archi Project",
-    creator: "Summer walker",
+    title: "Digital Logic: Building with Code, Craft, and Intuition",
+    creator: "Featuring Ciro Najle, Anna Font, Neslihan Gülhan, Edouard Cabay ",
     details: "A content that depicts modern arhitecture ",
   },
   {
     id: 2,
-    title: "Archi Project",
-    creator: "Summer walker",
+    title: "Social Logic: From Place-Making to People-Making",
+    creator:
+      "Featuring Roger Paez, Ángel Martín Cojo, Pau Bajet, Mariona Benedito",
     details: "A content that depicts modern arhitecture ",
   },
   {
     id: 3,
-    title: "Archi Project",
-    creator: "Summer walker",
+    title: "Environmental Logic: Energy, Landscape, and Systems Thinking",
+    creator:
+      "Featuring Alex Ivancic, Ferran Vizoso, Javier García-Germán, Cristina Goberna Pesudo",
     details: "A content that depicts modern arhitecture ",
   },
   {
     id: 4,
-    title: "Archi Project",
-    creator: "Summer walker",
+    title: "Tectonics Logic: Learning by Building ",
+    creator: "Featuring David Tapias, Francisco Cifuentes",
     details: "A content that depicts modern arhitecture ",
   },
   {
     id: 5,
-    title: "Archi Project",
-    creator: "Summer walker",
-    details: "A content that depicts modern arhitecture ",
-  },
-  {
-    id: 6,
-    title: "Archi Project",
-    creator: "Summer walker",
-    details: "A content that depicts modern arhitecture ",
-  },
-  {
-    id: 7,
-    title: "Archi Project",
-    creator: "Summer walker",
+    title: "Cultural Logic: Architecture as Message and Medium ",
+    creator: "Featuring Ivan Blasi, Olga Subirós, Ricardo Devesa",
     details: "A content that depicts modern arhitecture ",
   },
 ];
@@ -54,11 +44,11 @@ const Projects = () => {
   return (
     <div className={classes.projects}>
       <div className={classes.projects_container}>
-        <p className={classes.projects_label}>Projects</p>
+        <p className={classes.projects_label}>My Works</p>
 
         <div className={classes.projects_grid}>
-          {content.map((item, index) => (
-            <SingleProject {...item} index={index} key={item.id} />
+          {content.map((item) => (
+            <SingleProject {...item} key={item.id} />
           ))}
         </div>
 

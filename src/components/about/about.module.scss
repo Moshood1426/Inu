@@ -5,6 +5,7 @@
   width: 85%;
   max-width: 750px;
   margin: 3rem auto;
+  margin-bottom: 15rem;
 
   p {
     max-width: fit-content;
@@ -25,6 +26,14 @@
       font-size: 4rem;
       max-width: 500px;
       margin: 0;
+    }
+  }
+
+  &_back {
+    font-family: $AirBnBMedium;
+    margin-bottom: 2rem;
+    @include media("<miniDesktop") {
+      display: none;
     }
   }
 }

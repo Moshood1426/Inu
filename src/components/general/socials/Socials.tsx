@@ -3,7 +3,7 @@ import classes from "./Socials.module.scss";
 import { BiLogoGmail, BiLogoTwitter } from "react-icons/bi";
 import { FaFacebook } from "react-icons/fa";
 import Image from "next/image";
-import introIcon from "@/assets/images/office-building.png";
+import introIcon from "@/assets/images/office-building.jpg";
 import Logo from "../logo/Logo";
 import { GoArrowUpRight } from "react-icons/go";
 

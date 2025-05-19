@@ -1,16 +1,16 @@
 import React from "react";
 import classes from "./about.module.scss";
-import { IoIosArrowRoundBack } from "react-icons/io"
+import { IoIosArrowRoundBack } from "react-icons/io";
 import Link from "next/link";
 
 const About = () => {
   return (
     <div className={classes.about}>
       <div className={classes.about_container}>
-        <div className={classes.about_back} >
+        <div className={classes.about_back}>
           <Link href={"/"}>
-          <IoIosArrowRoundBack />
-          <span>Back</span>
+            <IoIosArrowRoundBack />
+            <span>Back</span>
           </Link>
         </div>
         <div className={classes.about_title}>
@@ -19,9 +19,21 @@ const About = () => {
         </div>
 
         <section>
-          <h5>Welcome to Archiversehub</h5>
+          <h5>Welcome to Inu</h5>
           <p>
-            Archiversehub is a platform for exploring the ever-evolving world of
+            Inu is a platform for exploring the ever-evolving world of
+            architecture and design. We&apos;re passionate about uncovering the
+            stories behind the built environment, from iconic landmarks to
+            hidden gems, and sharing them with a community of like-minded
+            individuals.{" "}
+          </p>
+        </section>
+
+        <section>
+          <h5>Why the name Inu?</h5>
+          <p>
+            {" "}
+            Inu is a platform for exploring the ever-evolving world of
             architecture and design. We&apos;re passionate about uncovering the
             stories behind the built environment, from iconic landmarks to
             hidden gems, and sharing them with a community of like-minded

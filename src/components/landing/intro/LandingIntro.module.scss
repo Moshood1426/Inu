@@ -4,6 +4,7 @@
 .intro {
   h2 {
     position: relative;
+    font-size: 2.2rem;
     @include media("<=miniDesktop") {
       font-size: 1.953rem;
     }

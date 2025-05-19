@@ -138,6 +138,11 @@ ul:empty {
 }
 
 .small-landing {
+  background: url(".././assets/images/bgImg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
   @include media(">=miniDesktop") {
     display: none;
   }
