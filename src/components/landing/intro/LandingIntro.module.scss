@@ -3,6 +3,7 @@
 
 .intro {
   h2 {
+    position: relative;
     @include media("<=miniDesktop") {
       font-size: 1.953rem;
     }
@@ -10,6 +11,16 @@
     @include media("<=tablet") {
       font-size: 1.563rem;
     }
+  }
+
+  &_title_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $grey-100;
+    clip-path: "inset(0 0 0 0)";
   }
 
   &_container {

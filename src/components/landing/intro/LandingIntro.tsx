@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import introIcon from "@/assets/images/office-building.png";
 import classes from "./LandingIntro.module.scss";
 import { IoCaretForwardOutline } from "react-icons/io5";
@@ -8,11 +8,24 @@ import Link from "next/link";
 import Socials from "@/components/general/socials/Socials";
 import Nav from "@/components/general/nav/Nav";
 import { usePathname } from "next/navigation";
+import gsap from "gsap";
 
 const LandingIntro = () => {
   const [activeLink, setActiveLink] = useState("projects");
 
   const pathname = usePathname();
+
+  const overlayRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    if (overlayRef.current) {
+      gsap.to(overlayRef.current, {
+        clipPath: "inset(0 0 0 100%)", // fully clip from left to right
+        duration: .5,
+        ease: "power2.out",
+      });
+    }
+  }, []);
 
   useEffect(() => {
     const cleanPath = pathname.slice(1);
@@ -45,7 +58,13 @@ const LandingIntro = () => {
             className={classes.intro_item_img}
           />
           <div>
-            <h2>Lorem Ipsum gsa dolor sit amet, conse</h2>
+            <h2>
+              <span
+                ref={overlayRef}
+                className={classes.intro_title_overlay}
+              ></span>
+              Lorem Ipsum gsa dolor sit amet, conse
+            </h2>
             <p className={classes.intro_item_content_text}>
               quis dnostrud exercitation ullamco laboris nisi ut aliquip ex ea
               commodo consequat. Duis aut consequat consequat.
