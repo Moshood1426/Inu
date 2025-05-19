@@ -39,8 +39,8 @@ const LandingIntro = () => {
         <div className={`${classes.intro_item} ${classes.intro_item_content}`}>
           <Image
             src={introIcon}
-            width={"100"}
-            height={"100"}
+            width={"80"}
+            height={"80"}
             alt=""
             className={classes.intro_item_img}
           />
@@ -48,8 +48,7 @@ const LandingIntro = () => {
             <h2>Lorem Ipsum gsa dolor sit amet, conse</h2>
             <p className={classes.intro_item_content_text}>
               quis dnostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit ess.
+              commodo consequat. Duis aut consequat consequat.
             </p>
           </div>
 
