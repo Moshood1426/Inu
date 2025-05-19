@@ -129,20 +129,13 @@ ul:empty {
   }
 }
 
-.landing {
-  // height: 100vh;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
-  // box-sizing: border-box;
-}
 
 .small-landing {
   background: url(".././assets/images/bgImg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
+
   @include media(">=miniDesktop") {
     display: none;
   }
