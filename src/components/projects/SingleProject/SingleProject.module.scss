@@ -8,6 +8,8 @@
   justify-content: space-between;
   background-color: $grey-200;
   margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
 
   @include media(">=miniDesktop") {
     margin-bottom: 0;
@@ -19,11 +21,21 @@
     }
   }
 
+  &_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
   &_title {
     display: flex;
     gap: 0.2rem;
     flex-direction: column;
     margin-bottom: 1.2rem;
+    z-index: 2;
 
     h5 {
       margin: 0;
@@ -32,7 +44,7 @@
 
   &_creator {
     text-transform: capitalize;
-
+    z-index: 2;
     font-size: $extraSmallText;
     color: $black-600;
     font-family: $AirBnBMedium;
@@ -43,9 +55,11 @@
     margin-bottom: 3rem;
     color: $grey-900;
     font-size: $smallText;
+    z-index: 2;
   }
 
   &_explore {
+    z-index: 2;
     display: flex;
     align-items: center;
     gap: 0.25rem;

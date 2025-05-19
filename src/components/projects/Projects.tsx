@@ -54,9 +54,9 @@ const Projects = () => {
   return (
     <div className={classes.projects}>
       <div className={classes.projects_container}>
-        <div className={classes.projects_nav}>
+        {/* <div className={classes.projects_nav}>
           <Nav />
-        </div>
+        </div> */}
 
         <p className={classes.projects_label}>Projects</p>
 
@@ -71,10 +71,10 @@ const Projects = () => {
             <IoCaretForwardOutline className={classes.projects_btn_rot} /> Home
           </Link>
           <Link
-            href={"/about"}
+            href={"/articles"}
             className={`btn btn_light ${classes.projects_btn}`}
           >
-            About Us <IoCaretForwardOutline />
+            Articles <IoCaretForwardOutline />
           </Link>
         </div>
       </div>

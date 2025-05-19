@@ -60,8 +60,12 @@ const Articles = () => {
         </div>
 
         <div className={classes.articles_actions}>
-          <Link href={"/"} className={`btn btn_light ${classes.articles_btn}`}>
-            <IoCaretForwardOutline className={classes.articles_btn_rot} /> Home
+          <Link
+            href={"/projects"}
+            className={`btn btn_light ${classes.articles_btn}`}
+          >
+            <IoCaretForwardOutline className={classes.articles_btn_rot} />{" "}
+            Projects
           </Link>
           <Link
             href={"/about"}

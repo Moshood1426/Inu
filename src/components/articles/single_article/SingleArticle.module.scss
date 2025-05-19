@@ -5,6 +5,7 @@
   margin: 4% 10px;
   width: auto;
   box-shadow: $shadow-2;
+  position: relative;
 
   @include media(">=miniDesktop") {
     margin: 0;
@@ -17,17 +18,30 @@
   }
 
   &_container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 300px;
     padding: 2.5rem;
     background-color: $grey-200;
+    cursor: pointer;
+  }
+
+  &_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
   }
 
   &_intro {
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 2;
 
     &_category {
       text-transform: uppercase;
@@ -50,6 +64,8 @@
   }
 
   &_details {
+    position: relative;
+    z-index: 2;
     h5 {
       line-height: 1.5;
       margin: 0 0 0.2rem;

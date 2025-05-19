@@ -1,3 +1,4 @@
+import Nav from "@/components/general/nav/Nav";
 import Socials from "@/components/general/socials/Socials";
 import LandingContent from "@/components/landing/content/LandingContent";
 import Projects from "@/components/projects/Projects";
@@ -7,6 +8,7 @@ const page = () => {
   return (
     <div>
       <div className="small-landing">
+        <Nav />
         <Projects />
         <Socials />
       </div>

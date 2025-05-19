@@ -49,13 +49,11 @@ const LandingIntro = () => {
             <p className={classes.intro_item_content_text}>
               quis dnostrud exercitation ullamco laboris nisi ut aliquip ex ea
               commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit ess. exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit ess
+              voluptate velit ess.
             </p>
           </div>
 
-          <Link href={"/articles"} className={`btn ${classes.intro_btn}`}>
+          <Link href={"/projects"} className={`btn ${classes.intro_btn}`}>
             Explore <IoCaretForwardOutline />
           </Link>
         </div>
