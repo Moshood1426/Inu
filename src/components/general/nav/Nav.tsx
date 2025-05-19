@@ -20,7 +20,7 @@ const Nav = () => {
           ></span>
         </div>
       </div>
-      {showSideBar && <Sidebar />}
+      {showSideBar && <Sidebar showSideBar={showSideBar}/>}
     </div>
   );
 };

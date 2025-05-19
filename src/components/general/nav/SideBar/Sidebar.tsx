@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import gsap from "gsap";
 
-const Sidebar = () => {
+const Sidebar: React.FC<{ showSideBar: boolean }> = ({ showSideBar }) => {
   const [activeLink, setActiveLink] = useState("");
 
   const pathname = usePathname();
@@ -30,7 +30,7 @@ const Sidebar = () => {
         }
       );
     }
-  }, []);
+  }, [showSideBar]);
 
   useEffect(() => {
     const cleanPath = pathname.slice(1);
