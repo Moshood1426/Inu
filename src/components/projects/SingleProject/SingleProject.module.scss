@@ -9,6 +9,16 @@
   background-color: $grey-200;
   margin-bottom: 10px;
 
+  @include media(">=miniDesktop") {
+    margin-bottom: 0;
+  }
+
+  &_indent {
+    @include media(">=miniDesktop") {
+      transform: translateY(10%);
+    }
+  }
+
   &_title {
     display: flex;
     gap: 0.2rem;
@@ -21,15 +31,27 @@
   }
 
   &_creator {
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-size: 0.65rem;
-    color: $black-800;
+    text-transform: capitalize;
+
+    font-size: $extraSmallText;
+    color: $black-600;
+    font-family: $AirBnBMedium;
+    opacity: 0.7;
   }
 
   &_footer {
     margin-bottom: 3rem;
     color: $grey-900;
+    font-size: $smallText;
+  }
+
+  &_explore {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-family: $AirBnBLight;
+    font-size: $smallText;
+    opacity: 0.8;
   }
 
   //   h5 {

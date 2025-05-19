@@ -59,10 +59,10 @@ const Projects = () => {
         </div>
 
         <p className={classes.projects_label}>Projects</p>
-        
+
         <div className={classes.projects_grid}>
-          {content.map((item) => (
-            <SingleProject {...item} key={item.id} />
+          {content.map((item, index) => (
+            <SingleProject {...item} index={index} key={item.id} />
           ))}
         </div>
 

@@ -1,15 +1,27 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import introIcon from "@/assets/images/office-building.png";
 import classes from "./LandingIntro.module.scss";
 import { IoCaretForwardOutline } from "react-icons/io5";
 import Link from "next/link";
 import Socials from "@/components/general/socials/Socials";
 import Nav from "@/components/general/nav/Nav";
+import { usePathname } from "next/navigation";
 
 const LandingIntro = () => {
   const [activeLink, setActiveLink] = useState("projects");
+
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const cleanPath = pathname.slice(1);
+    if (!cleanPath || cleanPath === "projects") {
+      setActiveLink("projects");
+    } else if (cleanPath === "articles") {
+      setActiveLink("articles");
+    }
+  }, [pathname]);
 
   const updateLink = (arg: string) => {
     if (activeLink !== arg) {

@@ -52,10 +52,10 @@ const Articles = () => {
         </div>
 
         <p className={classes.articles_label}>Articles</p>
-        
+
         <div className={classes.articles_grid}>
-          {articles.map((item) => (
-            <SingleArticle {...item} key={item.id} />
+          {articles.map((item, index) => (
+            <SingleArticle {...item} index={index} key={item.id} />
           ))}
         </div>
 
