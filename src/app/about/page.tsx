@@ -1,6 +1,5 @@
 import About from "@/components/about/about";
 import Nav from "@/components/general/nav/Nav";
-import Link from "next/link";
 import React from "react";
 
 const page = () => {
