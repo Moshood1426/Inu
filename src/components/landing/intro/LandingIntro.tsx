@@ -29,10 +29,10 @@ const LandingIntro = () => {
 
   useEffect(() => {
     const cleanPath = pathname.slice(1);
-    if (!cleanPath || cleanPath === "projects") {
-      setActiveLink("projects");
-    } else if (cleanPath === "articles") {
+    if (!cleanPath || cleanPath === "articles") {
       setActiveLink("articles");
+    } else if (cleanPath === "projects") {
+      setActiveLink("projects");
     }
   }, [pathname]);
 
