@@ -11,7 +11,7 @@ import { usePathname } from "next/navigation";
 import gsap from "gsap";
 
 const LandingIntro = () => {
-  const [activeLink, setActiveLink] = useState<string | null>(null);
+  const [activeLink, setActiveLink] = useState("");
 
   const pathname = usePathname();
 
