@@ -8,7 +8,8 @@ const SingleProject: React.FC<{
   id: number;
   creator: string;
   title: string;
-}> = ({ id, title, creator }) => {
+  img: string;
+}> = ({ id, title,img, creator }) => {
   const gradientRef = useRef<HTMLDivElement | null>(null);
 
   const router = useRouter();
@@ -53,6 +54,7 @@ const SingleProject: React.FC<{
     <div
       className={`${classes.project}`}
       onClick={() => router.push(`/projects/${id}`)}
+      style={{ background: `url(${img})` }}
     >
       <div className={classes.project_overlay} ref={gradientRef}></div>
       <div className={classes.project_title}>

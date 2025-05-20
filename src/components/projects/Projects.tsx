@@ -11,7 +11,7 @@ const content = [
     title: "Digital Logic: Building with Code, Craft, and Intuition",
     creator: "Featuring Ciro Najle, Anna Font, Neslihan Gülhan, Edouard Cabay ",
     details: "A content that depicts modern arhitecture ",
-    img: "../../../assets/images/web-img-2.jpg",
+    img: "/images/web-img-1.jpg",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const content = [
     creator:
       "Featuring Roger Paez, Ángel Martín Cojo, Pau Bajet, Mariona Benedito",
     details: "A content that depicts modern arhitecture ",
-    img: "../../../assets/images/web-img-2.jpg",
+    img: "/images/web-img-3.jpg",
   },
   {
     id: 3,
@@ -27,21 +27,21 @@ const content = [
     creator:
       "Featuring Alex Ivancic, Ferran Vizoso, Javier García-Germán, Cristina Goberna Pesudo",
     details: "A content that depicts modern arhitecture ",
-    img: "../../../assets/images/web-img-2.jpg",
+    img: "/images/web-img-2.jpg",
   },
   {
     id: 4,
     title: "Tectonics Logic: Learning by Building ",
     creator: "Featuring David Tapias, Francisco Cifuentes",
     details: "A content that depicts modern arhitecture ",
-    img: "../../../assets/images/web-img-2.jpg",
+    img: "/images/web-img-3.jpg",
   },
   {
     id: 5,
     title: "Cultural Logic: Architecture as Message and Medium ",
     creator: "Featuring Ivan Blasi, Olga Subirós, Ricardo Devesa",
     details: "A content that depicts modern arhitecture ",
-    img: "../../../assets/images/web-img-2.jpg",
+    img: "/images/web-img-2.jpg",
   },
 ];
 
