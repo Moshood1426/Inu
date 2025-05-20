@@ -1,16 +1,15 @@
+
 import ProjectOne from "@/components/project_details/projectOne/projectOne";
 import ProjectTwo from "@/components/project_details/projectTwo/projectTwo";
 import ProjectFour from "@/components/project_details/projectFour/projectFour";
 import ProjectThree from "@/components/project_details/projectThree/projectThree";
 import ProjectFive from "@/components/project_details/projectFive/projectFive";
 
-interface Props {
-  params: {
-    id: string;
-  };
-}
+type Params = {
+  id: string;
+};
 
-const Page: React.FC<Props> = ({ params }) => {
+const Page: React.FC<{ params: Params }> = ({ params }) => {
   const { id } = params;
 
   return (
