@@ -4,14 +4,8 @@ import ProjectFour from "@/components/project_details/projectFour/projectFour";
 import ProjectThree from "@/components/project_details/projectThree/projectThree";
 import ProjectFive from "@/components/project_details/projectFive/projectFive";
 
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
-
-const Page = ({ params }: PageProps) => {
-  const { id } = params;
+function Page({ params }: { params: { id: string } }) {
+  const id = +params.id;
 
   return (
     <div>
