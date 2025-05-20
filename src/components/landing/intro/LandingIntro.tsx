@@ -74,7 +74,7 @@ const LandingIntro = () => {
             </p>
           </div>
 
-          <Link href={"/projects"} className={`btn ${classes.intro_btn}`}>
+          <Link href={"/articles"} className={`btn ${classes.intro_btn}`}>
             Explore <IoCaretForwardOutline />
           </Link>
         </div>
