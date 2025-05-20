@@ -11,7 +11,7 @@ import { usePathname } from "next/navigation";
 import gsap from "gsap";
 
 const LandingIntro = () => {
-  const [activeLink, setActiveLink] = useState("projects");
+  const [activeLink, setActiveLink] = useState<string | null>(null);
 
   const pathname = usePathname();
 
@@ -85,7 +85,7 @@ const LandingIntro = () => {
               <li onClick={() => updateLink("articles")}>
                 <small
                   className={`${classes.intro_bignav_list_item} ${
-                    activeLink === "articles"
+                    activeLink === "articles" || activeLink === ""
                       ? classes.intro_bignav_list_item_active
                       : ""
                   }`}
@@ -93,7 +93,7 @@ const LandingIntro = () => {
                   <span>01</span>
                   <span
                     className={`${classes.intro_bignav_list_link} ${
-                      activeLink === "projects" && classes.active
+                      activeLink === "articles" && classes.active
                     }`}
                   >
                     Articles
@@ -114,7 +114,7 @@ const LandingIntro = () => {
                   <span>00</span>
                   <span
                     className={`${classes.intro_bignav_list_link} ${
-                      activeLink === "articles" && classes.active
+                      activeLink === "projects" && classes.active
                     }`}
                   >
                     My works
@@ -122,7 +122,7 @@ const LandingIntro = () => {
                 </small>
               </li>
             </Link>
-            
+
             <Link href={"/about"}>
               <li onClick={() => updateLink("about")}>
                 <small

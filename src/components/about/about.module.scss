@@ -27,10 +27,47 @@
   }
 
   &_back {
-    font-family: $AirBnBMedium;
-    margin-bottom: 2rem;
-    @include media("<miniDesktop") {
-      display: none;
+    margin: 2rem 0;
+    font-family: $AirBnBLight;
+    border: $black-300 solid 1px;
+    width: fit-content;
+    padding: 0.35rem 0.75rem;
+
+    @include media(">=miniDesktop") {
+      margin-top: 4rem;
+    }
+
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &_next {
+    max-width: 300px;
+    background-color: $grey-200;
+    font-size: $smallText;
+    padding: 0.85rem 1.5rem;
+    margin: 3rem 0;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    small {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 0.65rem;
+      color: $black-600;
+      font-family: $AirBnBDark;
+    }
+
+    p {
+      margin: 0;
+      font-size: $smallText;
     }
   }
 }

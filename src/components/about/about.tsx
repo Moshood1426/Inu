@@ -1,18 +1,19 @@
 import React from "react";
 import classes from "./about.module.scss";
-import { IoIosArrowRoundBack } from "react-icons/io";
+import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 import Link from "next/link";
 
 const About = () => {
   return (
     <div className={classes.about}>
       <div className={classes.about_container}>
-        <div className={classes.about_back}>
-          <Link href={"/"}>
+        <Link href={"/"}>
+          <div className={classes.about_back}>
             <IoIosArrowRoundBack />
             <span>Back</span>
-          </Link>
-        </div>
+          </div>
+        </Link>
+
         <div className={classes.about_title}>
           <h3>Learn More About Us</h3>
           <small>Our Inspiration, community and mission</small>
@@ -44,10 +45,10 @@ const About = () => {
         <section>
           <h5>Our Mission</h5>
           <p>
-            At Archiversehub, we believe that architecture has the power to
-            shape our experiences, influence our cultures, and impact our
-            planet. Our mission is to inspire, educate, and spark meaningful
-            conversations about the role of architecture in our lives
+            At Inu, we believe that architecture has the power to shape our
+            experiences, influence our cultures, and impact our planet. Our
+            mission is to inspire, educate, and spark meaningful conversations
+            about the role of architecture in our lives
           </p>
         </section>
 
@@ -67,6 +68,7 @@ const About = () => {
               A curated selection of inspiring projects, images, and resource
             </li>
           </ul>
+          <p></p>
         </section>
 
         <section>
@@ -88,6 +90,15 @@ const About = () => {
             explore the world of architecture together.
           </p>
         </section>
+
+        <Link href={`/articles`}>
+          <div className={classes.about_next}>
+            <small>
+              LEARN MORE <IoIosArrowRoundForward />
+            </small>
+            <p>Explore our articles and projects</p>
+          </div>
+        </Link>
       </div>
     </div>
   );
