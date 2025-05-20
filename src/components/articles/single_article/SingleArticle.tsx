@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import classes from "./SingleArticle.module.scss";
 import { IoMdTime } from "react-icons/io";
 import { SlCalender } from "react-icons/sl";
+import { useRouter } from "next/navigation";
 
 const SingleArticle: React.FC<{
   id: number;
@@ -11,8 +12,10 @@ const SingleArticle: React.FC<{
   title: string;
   time: string;
   img: string;
-}> = ({ category, img, date, title, time }) => {
+}> = ({ category, id, img, date, title, time }) => {
   const gradientRef = useRef<HTMLDivElement | null>(null);
+
+  const router = useRouter();
 
   // useEffect(() => {
   //   const handleMouseMove = (event: MouseEvent) => {
@@ -51,7 +54,10 @@ const SingleArticle: React.FC<{
   // }, []);
 
   return (
-    <div className={`${classes.article} `}>
+    <div
+      className={`${classes.article} `}
+      onClick={() => router.push(`/articles/${id}`)}
+    >
       <div
         className={classes.article_container}
         style={{ background: `url(${img})` }}

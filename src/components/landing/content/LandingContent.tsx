@@ -26,11 +26,12 @@ const LandingContent = () => {
         <div
           className={`${classes.landing_container_item} ${classes.landing_articles}`}
         >
-          {currentPath === "projects" || currentPath === "" ? (
-            <Projects />
-          ) : (
-            <Articles />
-          )}
+          {currentPath !== null &&
+            (currentPath === "articles" || currentPath === "" ? (
+              <Articles />
+            ) : (
+              <Projects />
+            ))}
         </div>
       </div>
     </div>

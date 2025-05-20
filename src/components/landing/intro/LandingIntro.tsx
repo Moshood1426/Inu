@@ -81,26 +81,6 @@ const LandingIntro = () => {
 
         <div className={`${classes.intro_item} ${classes.intro_bignav}`}>
           <ul className={classes.intro_bignav_list}>
-            <Link href={"/projects"}>
-              <li onClick={() => updateLink("projects")}>
-                <small
-                  className={`${classes.intro_bignav_list_item} ${
-                    activeLink === "projects"
-                      ? classes.intro_bignav_list_item_active
-                      : ""
-                  }`}
-                >
-                  <span>00</span>
-                  <span
-                    className={`${classes.intro_bignav_list_link} ${
-                      activeLink === "articles" && classes.active
-                    }`}
-                  >
-                    My works
-                  </span>
-                </small>
-              </li>
-            </Link>
             <Link href={"/articles"}>
               <li onClick={() => updateLink("articles")}>
                 <small
@@ -121,6 +101,28 @@ const LandingIntro = () => {
                 </small>
               </li>
             </Link>
+
+            <Link href={"/projects"}>
+              <li onClick={() => updateLink("projects")}>
+                <small
+                  className={`${classes.intro_bignav_list_item} ${
+                    activeLink === "projects"
+                      ? classes.intro_bignav_list_item_active
+                      : ""
+                  }`}
+                >
+                  <span>00</span>
+                  <span
+                    className={`${classes.intro_bignav_list_link} ${
+                      activeLink === "articles" && classes.active
+                    }`}
+                  >
+                    My works
+                  </span>
+                </small>
+              </li>
+            </Link>
+            
             <Link href={"/about"}>
               <li onClick={() => updateLink("about")}>
                 <small

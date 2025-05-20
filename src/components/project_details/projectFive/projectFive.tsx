@@ -7,7 +7,7 @@ const ProjectFive = () => {
       title="Cultural Logic: Architecture as Message and Medium"
       subtitle="Featuring Ivan Blasi, Olga Subirós, Ricardo Devesa"
       nextPostId={"1"}
-      nextPost="Digital Logic: Building with Code, Craft, and Intuition"
+      nextPost="Digital Tools and Sustainable Architecture: Promises and Pitfalls"
     >
       <div></div>
     </ArticleLayout>

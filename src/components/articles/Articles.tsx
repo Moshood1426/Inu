@@ -7,27 +7,36 @@ import Nav from "../general/nav/Nav";
 
 const articles = [
   {
-    id: 0,
-    category: "personal",
+    id: 1,
+    category: "program review",
     date: "May 15, 2025",
-    title: "My Learning Journey",
+    title: "Digital Tools and Sustainable Architecture",
     time: "19 mins read",
     img: "/images/web-img-1.jpg",
   },
   {
-    id: 1,
-    category: "interviews",
+    id: 2,
+    category: "program review",
     date: "May 15, 2025",
-    title: "Experts Weigh In: The Future of Sustainable Architecture",
+    title:
+      "From Abstract to Tangible: The MIAD Program's Pedagogical Framework",
     time: "19 mins read",
     img: "/images/web-img-3.jpg",
   },
   {
-    id: 2,
-    category: "Article Category",
+    id: 3,
+    category: "program review",
     date: "January 01, 2022",
     title:
-      "Beyond the Build: Professionals Talk Sustainability in Architecture",
+      "Architecture as an 'Agent of Change': Communication and Advocacy in the Mass Media Era",
+    time: "19 mins read",
+    img: "/images/web-img-2.jpg",
+  },
+  {
+    id: 4,
+    category: "Personal",
+    date: "January 01, 2022",
+    title: "My Journey LaSalle Experience",
     time: "19 mins read",
     img: "/images/web-img-2.jpg",
   },
