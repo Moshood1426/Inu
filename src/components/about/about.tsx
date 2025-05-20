@@ -34,11 +34,22 @@ const About = () => {
           <h5>Why the name Inu?</h5>
           <p>
             {" "}
-            Inu is a platform for exploring the ever-evolving world of
-            architecture and design. We&apos;re passionate about uncovering the
-            stories behind the built environment, from iconic landmarks to
-            hidden gems, and sharing them with a community of like-minded
-            individuals.{" "}
+            The Yoruba concept of &quot;inú&quot; is a profound philosophical
+            and spiritual idea that extends far beyond its literal translation.
+            In Yoruba, inú means “inside” or “inner being”, but it encompasses
+            more than just the physical interior—it refers to a person’s inner
+            essence, emotions, conscience, character, and moral center.{" "}
+          </p>
+          <p>
+            &quot;Inú,&quot; meaning &quot;inside&quot; in Yoruba, encapsulates
+            the essence of this architectural project — a deeper look beyond
+            structure and form. Architecture is often viewed only through its
+            surface — walls, facades, and materials — but Inú invites us to look
+            inward. It reflects the idea that true architecture resides not just
+            in what we build, but in how it shapes, reflects, and resonates with
+            our inner lives, identities, and collective memory. This project
+            explores architecture as a vessel of culture, emotion, and meaning —
+            revealing that what’s within is just as vital as what is seen.
           </p>
         </section>
 

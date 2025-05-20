@@ -58,14 +58,18 @@ const Projects = () => {
         </div>
 
         <div className={classes.projects_actions}>
-          <Link href={"/"} className={`btn btn_light ${classes.projects_btn}`}>
-            <IoCaretForwardOutline className={classes.projects_btn_rot} /> Home
-          </Link>
           <Link
             href={"/articles"}
             className={`btn btn_light ${classes.projects_btn}`}
           >
-            Articles <IoCaretForwardOutline />
+            <IoCaretForwardOutline className={classes.projects_btn_rot} />{" "}
+            Articles
+          </Link>
+          <Link
+            href={"/about"}
+            className={`btn btn_light ${classes.projects_btn}`}
+          >
+            About Us <IoCaretForwardOutline />
           </Link>
         </div>
       </div>
