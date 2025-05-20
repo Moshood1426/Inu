@@ -1,14 +1,17 @@
-import ArticleLayout from '@/components/general/article_layout/ArticleLayout'
-import React from 'react'
+import ArticleLayout from "@/components/general/article_layout/ArticleLayout";
+import React from "react";
 
-const projectThree = () => {
+const ProjectThree = () => {
   return (
-    <ArticleLayout>
-    <div>
-      
-    </div>
-  </ArticleLayout>
-  )
-}
+    <ArticleLayout
+      title="Environmental Logic: Energy, Landscape, and Systems Thinking"
+      subtitle="Featuring Alex Ivancic, Ferran Vizoso, Javier García-Germán, Cristina Goberna Pesudo"
+      nextPost="Tectonics Logic: Learning by Building "
+      nextPostId={"4"}
+    >
+      <div></div>
+    </ArticleLayout>
+  );
+};
 
-export default projectThree
+export default ProjectThree;

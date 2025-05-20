@@ -1,0 +1,107 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.layout {
+  //   background: url("../../../assets/images/bgImg2.jpg");
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+
+  p {
+    max-width: none;
+    font-size: 1.2rem;
+  }
+
+  &_container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 950px;
+  }
+
+  &_big_screen {
+    margin: 2rem 0;
+    font-family: $AirBnBLight;
+    border: $black-300 solid 1px;
+    width: fit-content;
+    padding: 0.35rem 0.75rem;
+
+    @include media(">=miniDesktop") {
+      margin-top: 4rem;
+    }
+
+    svg {
+      margin-right: 0.5rem;
+    }
+
+    // @include media("<miniDesktop") {
+    //   display: none;
+    // }
+  }
+
+  &_small_screen {
+    @include media(">=miniDesktop") {
+      display: none;
+    }
+  }
+
+  &_intro {
+    margin-bottom: 2rem;
+
+    &_details {
+      display: flex;
+      font-weight: 500;
+      color: $black-500;
+      margin-bottom: 0.8rem;
+      gap: 0.75rem;
+
+      svg {
+        margin-right: 5px;
+        // font-size: 0.6rem;
+      }
+
+      small {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &_title {
+      h4 {
+        margin-bottom: 0.35rem;
+      }
+    }
+  }
+
+  &_children {
+    margin-bottom: 3rem;
+  }
+
+  &_next {
+    max-width: 300px;
+    background-color: $grey-200;
+    font-size: $smallText;
+    padding: 0.85rem 1.5rem;
+    margin-bottom: 3rem;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    small {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 0.65rem;
+      color: $black-600;
+      font-family: $AirBnBDark;
+    }
+
+    p {
+      margin: 0;
+      font-size: $smallText;
+    }
+  }
+}

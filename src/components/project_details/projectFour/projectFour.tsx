@@ -1,11 +1,17 @@
-import React from 'react'
+import ArticleLayout from "@/components/general/article_layout/ArticleLayout";
+import React from "react";
 
-const projectFour = () => {
+const ProjectFour = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <ArticleLayout
+      title="Tectonics Logic: Learning by Building"
+      subtitle="Featuring David Tapias, Francisco Cifuentes"
+      nextPostId={"5"}
+      nextPost="Cultural Logic: Architecture as Message and Medium "
+    >
+      <div></div>
+    </ArticleLayout>
+  );
+};
 
-export default projectFour
+export default ProjectFour;

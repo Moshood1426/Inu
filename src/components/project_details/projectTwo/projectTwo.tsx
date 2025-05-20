@@ -1,14 +1,17 @@
-import ArticleLayout from '@/components/general/article_layout/ArticleLayout'
-import React from 'react'
+import ArticleLayout from "@/components/general/article_layout/ArticleLayout";
+import React from "react";
 
-const projectTwo = () => {
+const ProjectTwo = () => {
   return (
-    <ArticleLayout>
-    <div>
-      
-    </div>
-  </ArticleLayout>
-  )
-}
+    <ArticleLayout
+      title="Social Logic: From Place-Making to People-Making"
+      subtitle="Featuring Roger Paez, Ángel Martín Cojo, Pau Bajet, Mariona Benedito"
+      nextPost="Environmental Logic: Energy, Landscape, and Systems Thinking"
+      nextPostId={"3"}
+    >
+      <div></div>
+    </ArticleLayout>
+  );
+};
 
-export default projectTwo
+export default ProjectTwo;
