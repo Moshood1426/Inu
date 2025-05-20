@@ -1,10 +1,10 @@
-import ArticleOne from "@/components/article_details/articleOne/articleOne";
 import React from "react";
+import projectOne from "@/components/project_details/projectOne/projectOne";
 
 const page = () => {
   return (
     <div>
-      <ArticleOne />
+      <ProjectOne />
     </div>
   );
 };

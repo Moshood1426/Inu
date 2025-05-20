@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import ArticleLayout from "@/components/general/article_layout/ArticleLayout";
 
 const projectOne = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <ArticleLayout>
+      <div>
+        
+      </div>
+    </ArticleLayout>
+  );
+};
 
-export default projectOne
+export default projectOne;
