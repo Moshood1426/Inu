@@ -10,7 +10,7 @@ const articles = [
     id: 1,
     category: "program review",
     date: "May 15, 2025",
-    title: "Digital Tools and Sustainable Architecture",
+    title: "Digital Tools and Sustainable Architecture: Promises and Pitfalls",
     time: "19 mins read",
     img: "/images/web-img-1.jpg",
   },

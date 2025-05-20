@@ -3,6 +3,9 @@ import classes from "./articleOne.module.scss";
 import ArticleLayout from "@/components/general/article_layout/ArticleLayout";
 import Image from "next/image";
 import introImg from "../../../assets/images/digitaal.jpg";
+import digitalTwo from "../../../assets/images/digital-2.jpg";
+import digitalThree from "../../../assets/images/digital-3.jpg";
+import digitalFour from "../../../assets/images/digital-4.jpg";
 
 const ArticleOne = () => {
   return (
@@ -23,6 +26,9 @@ const ArticleOne = () => {
           alt=""
           className={classes.article_img}
         />
+        <small className={classes.article_small}>
+          From Illustraic - Digital tools and modern architecture
+        </small>
       </section>
 
       <section className={classes.article_section}>
@@ -67,6 +73,19 @@ const ArticleOne = () => {
       </section>
 
       <section className={classes.article_section}>
+        <Image
+          src={digitalTwo}
+          width={"600"}
+          height={"400"}
+          alt=""
+          className={classes.article_img}
+        />
+        <small className={classes.article_small}>
+          From Illustraic - Digital tools and modern architecture
+        </small>
+      </section>
+
+      <section className={classes.article_section}>
         <h5>The Pitfalls and Ethical Considerations</h5>
         <p>
           Despite these promises, the pervasive use of digital tools in
@@ -105,6 +124,19 @@ const ArticleOne = () => {
       </section>
 
       <section className={classes.article_section}>
+        <Image
+          src={digitalThree}
+          width={"600"}
+          height={"400"}
+          alt=""
+          className={classes.article_img}
+        />
+        <small className={classes.article_small}>
+          Using Revit Architecture - GRAITEC Group
+        </small>
+      </section>
+
+      <section className={classes.article_section}>
         <p>
           Beyond these practical challenges, ethical considerations extend to
           the potential for algorithmic bias and the dehumanization of design.
@@ -120,6 +152,19 @@ const ArticleOne = () => {
           experience of space, which must remain central even as digital tools
           advance.
         </p>
+      </section>
+
+      <section className={classes.article_section}>
+        <Image
+          src={digitalFour}
+          width={"600"}
+          height={"400"}
+          alt=""
+          className={classes.article_img}
+        />
+        <small className={classes.article_small}>
+          from parametric architecture - studio design
+        </small>
       </section>
 
       <section className={classes.article_section}>
