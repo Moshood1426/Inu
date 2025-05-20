@@ -2,7 +2,9 @@ import ArticleLayout from "@/components/general/article_layout/ArticleLayout";
 import React from "react";
 import classes from "./articleThree.module.scss";
 import Image from "next/image";
-import introImg from "../../../assets/images/digitaal.jpg";
+import introImg from "../../../assets/images/arc-1.jpg";
+import arcTwo from "../../../assets/images/arc-2.jpg";
+import arcThree from "../../../assets/images/arc-3.jpg";
 
 const ArticleThree = () => {
   return (
@@ -23,6 +25,9 @@ const ArticleThree = () => {
           alt=""
           className={classes.article_img}
         />
+        <small className={classes.article_small}>
+          Achitecture evolving role - Archdaily
+        </small>
       </section>
 
       <section className={classes.article_section}>
@@ -73,6 +78,19 @@ const ArticleThree = () => {
       </section>
 
       <section className={classes.article_section}>
+        <Image
+          src={arcTwo}
+          width={"600"}
+          height={"400"}
+          alt=""
+          className={classes.article_img}
+        />
+        <small className={classes.article_small}>
+          Passive aggresive design - The Architect Newspaper
+        </small>
+      </section>
+
+      <section className={classes.article_section}>
         <p>
           One of the critical areas where architects can exert their influence
           is in advocating for sustainable practices. This involves not only
@@ -102,6 +120,19 @@ const ArticleThree = () => {
           architecture and to highlight projects that exemplify a more
           responsible approach.
         </p>
+      </section>
+
+      <section className={classes.article_section}>
+        <Image
+          src={arcThree}
+          width={"600"}
+          height={"400"}
+          alt=""
+          className={classes.article_img}
+        />
+        <small className={classes.article_small}>
+          Life Expressionism by Brani & Desi
+        </small>
       </section>
 
       <section className={classes.article_section}>

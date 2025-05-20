@@ -1,8 +1,12 @@
 import React from "react";
 import ArticleLayout from "@/components/general/article_layout/ArticleLayout";
 import Image from "next/image";
-import introImg from "../../../assets/images/digitaal.jpg";
 import classes from "./articleFour.module.scss";
+import introImg from "../../../assets/images/LaSalle-1.jpg";
+import lasalletwo from "../../../assets/images/masters-2.jpg";
+import lasallethree from "../../../assets/images/laSalle-3.jpg";
+import lasalleFour from "../../../assets/images/laSalle.jpg";
+import lasalleFive from "../../../assets/images/lasallefive.jpg";
 
 const ArticleFour = () => {
   return (
@@ -21,6 +25,9 @@ const ArticleFour = () => {
           alt=""
           className={classes.article_img}
         />
+        <small className={classes.article_small}>
+          LaSalle University - Barcelona
+        </small>
       </section>
 
       <section className={classes.article_section}>
@@ -52,6 +59,19 @@ const ArticleFour = () => {
           holistic framework that ensures sustainability is considered from
           every angle.
         </p>
+      </section>
+
+      <section className={classes.article_section}>
+        <Image
+          src={lasalletwo}
+          width={"600"}
+          height={"400"}
+          alt=""
+          className={classes.article_img}
+        />
+        <small className={classes.article_small}>
+          LaSalle University - Barcelona
+        </small>
       </section>
 
       <section className={classes.article_section}>
@@ -98,6 +118,19 @@ const ArticleFour = () => {
         </p>
       </section>
 
+      <section className={classes.article_section}>
+        <Image
+          src={lasallethree}
+          width={"600"}
+          height={"400"}
+          alt=""
+          className={classes.article_img}
+        />
+        <small className={classes.article_small}>
+          LaSalle University Master Plan- Kimmel Bogrette Architecture
+        </small>
+      </section>
+
       <section>
         <p>
           The Cultural Logics have highlighted architecture&quot;s capacity to
@@ -130,6 +163,19 @@ const ArticleFour = () => {
           structured around distinct yet interconnected &quot;logics&quot;:
           Digital, Social, Environmental, Tectonics, and Cultural.
         </p>
+      </section>
+
+      <section className={classes.article_section}>
+        <Image
+          src={lasalleFour}
+          width={"600"}
+          height={"400"}
+          alt=""
+          className={classes.article_img}
+        />
+        <small className={classes.article_small}>
+          LaSalle University Master Plan- Kimmel Bogrette Architecture
+        </small>
       </section>
 
       <section>
@@ -185,6 +231,19 @@ const ArticleFour = () => {
           environmental footprint and what traditional crafts can teach us about
           modern sustainable construction.
         </p>
+      </section>
+
+      <section className={classes.article_section}>
+        <Image
+          src={lasalleFive}
+          width={"600"}
+          height={"400"}
+          alt=""
+          className={classes.article_img}
+        />
+        <small className={classes.article_small}>
+          LaSalle University Master Plan- Kimmel Bogrette Architecture
+        </small>
       </section>
 
       <section>

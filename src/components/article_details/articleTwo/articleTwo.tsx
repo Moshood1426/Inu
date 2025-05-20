@@ -2,7 +2,9 @@ import ArticleLayout from "@/components/general/article_layout/ArticleLayout";
 import React from "react";
 import classes from "./articleTwo.module.scss";
 import Image from "next/image";
-import introImg from "../../../assets/images/digitaal.jpg";
+import introImg from "../../../assets/images/masters-1.jpg";
+import mastersTwo from "../../../assets/images/masters-2.jpg";
+import mastersThree from "../../../assets/images/masters-3.jpg";
 
 const ArticleTwo = () => {
   return (
@@ -17,12 +19,15 @@ const ArticleTwo = () => {
     >
       <section className={classes.article_section}>
         <Image
-          src={introImg}
+          src={mastersTwo}
           width={"600"}
           height={"400"}
           alt=""
           className={classes.article_img}
         />
+        <small className={classes.article_small}>
+          MIAD - La Salle Campus Barcelona
+        </small>
       </section>
 
       <section className={classes.article_section}>
@@ -57,6 +62,19 @@ const ArticleTwo = () => {
           directly impact environmental footprint. It also encourages them to
           propose practical, sustainable solutions for contemporary contexts.
         </p>
+      </section>
+
+      <section className={classes.article_section}>
+        <Image
+          src={introImg}
+          width={"600"}
+          height={"400"}
+          alt=""
+          className={classes.article_img}
+        />
+        <small className={classes.article_small}>
+          MIAD - La Salle Campus Barcelona
+        </small>
       </section>
 
       <section className={classes.article_section}>
@@ -98,6 +116,19 @@ const ArticleTwo = () => {
           principles and preparing students for the iterative and
           problem-solving nature of real-world architectural practice.
         </p>
+      </section>
+
+      <section className={classes.article_section}>
+        <Image
+          src={mastersThree}
+          width={"600"}
+          height={"400"}
+          alt=""
+          className={classes.article_img}
+        />
+        <small className={classes.article_small}>
+          MIAD - La Salle Campus Barcelona
+        </small>
       </section>
 
       <section className={classes.article_section}>

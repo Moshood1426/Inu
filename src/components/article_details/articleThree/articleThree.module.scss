@@ -29,13 +29,17 @@
   }
 
   &_img {
-    
     margin: 0 auto;
+    max-width: 100%;
   }
 
   &_small {
     display: flex;
     justify-content: center;
     margin-top: 0.5rem;
+  }
+
+  img {
+    max-width: 100%;
   }
 }
