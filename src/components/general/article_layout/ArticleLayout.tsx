@@ -8,6 +8,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { IoReturnUpBackSharp } from "react-icons/io5";
 
 interface ArticleLayoutProps {
+  route?: "projects" | "articles";
   children: ReactNode;
   title: string;
   subtitle: string;
@@ -16,6 +17,7 @@ interface ArticleLayoutProps {
 }
 
 const ArticleLayout: React.FC<ArticleLayoutProps> = ({
+  route = "projects",
   children,
   title,
   subtitle,
@@ -29,7 +31,7 @@ const ArticleLayout: React.FC<ArticleLayoutProps> = ({
           <Nav />
         </div>
 
-        <Link href={"/projects"}>
+        <Link href={`/${route}`}>
           <div className={classes.layout_big_screen}>
             <IoReturnUpBackSharp />
             <span>Back</span>
@@ -54,7 +56,7 @@ const ArticleLayout: React.FC<ArticleLayoutProps> = ({
           </div>
         </div>
         <div className={classes.layout_children}>{children}</div>
-        <Link href={`/projects/${nextPostId}`}>
+        <Link href={`/${route}/${nextPostId}`}>
           <div className={classes.layout_next}>
             <small>
               next post <IoIosArrowRoundForward />

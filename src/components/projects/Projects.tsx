@@ -8,8 +8,8 @@ import { IoCaretForwardOutline } from "react-icons/io5";
 const content = [
   {
     id: 1,
-    title: "Digital Tools and Sustainable Architecture: Promises and Pitfalls",
-    creator: "Promises and Pitfalls",
+    title: "Digital Logic: Building with Code, Craft, and Intuition ",
+    creator: "Featuring Ciro Najle, Anna Font, Neslihan Gülhan, Edouard Cabay ",
     details: "A content that depicts modern arhitecture ",
     img: "/images/web-img-1.jpg",
   },

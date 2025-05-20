@@ -7,11 +7,12 @@ import introImg from "../../../assets/images/digitaal.jpg";
 const ArticleOne = () => {
   return (
     <ArticleLayout
+      route="articles"
       title={
         "Digital Tools and Sustainable Architecture: Promises and Pitfalls"
       }
       subtitle={" "}
-      nextPost="Social Logic: From Place-Making to People-Making"
+      nextPost="From Abstract to Tangible: The MIAD Program's Pedagogical Framework"
       nextPostId={"2"}
     >
       <section className={classes.article_section}>
@@ -20,7 +21,7 @@ const ArticleOne = () => {
           width={"600"}
           height={"400"}
           alt=""
-          className={classes.intro_item_img}
+          className={classes.article_img}
         />
       </section>
 
