@@ -69,7 +69,7 @@ const Sidebar: React.FC<{ showSideBar: boolean }> = ({ showSideBar }) => {
           </Link>
           <Link href={"/contact"}>
             <li className={`${activeLink === "contact" && classes.nav_active}`}>
-              Contact Us
+              Get Updates
             </li>
           </Link>
         </ul>

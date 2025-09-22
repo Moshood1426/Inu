@@ -164,7 +164,7 @@ const LandingIntro = () => {
                       activeLink === "contact" && classes.active
                     }`}
                   >
-                    Contact Us
+                    Get Updates
                   </span>
                 </small>
               </li>
