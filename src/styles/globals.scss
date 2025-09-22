@@ -109,6 +109,13 @@ ul:empty {
   margin-bottom: 1rem;
   font-weight: bold;
 
+  &_full {
+    width: 100%;
+    max-width: 600px;
+    padding: 0.75rem;
+    border-radius: $borderRadius;
+  }
+
   &:hover {
     background: $black-900;
     box-shadow: $shadow-2;
@@ -129,6 +136,13 @@ ul:empty {
   }
 }
 
+.contact {
+  background: url(".././assets/images/bgImg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid 1px $grey-100;
+}
 
 .small-landing {
   background: url(".././assets/images/bgImg2.jpg");
@@ -136,6 +150,12 @@ ul:empty {
   background-repeat: no-repeat;
   background-position: center;
 
+  @include media(">=miniDesktop") {
+    display: none;
+  }
+}
+
+.abt_small {
   @include media(">=miniDesktop") {
     display: none;
   }
@@ -193,7 +213,7 @@ ul:empty {
     color: $black-600;
     font-family: $ApercuLight;
     font-size: 16px;
-    max-width: 25em;
+    //max-width: 25em;
     border-radius: $borderRadius;
   }
 
@@ -289,6 +309,11 @@ a {
 .alert-success {
   color: $green-dark;
   background: $green-light;
+}
+
+.alert-loading {
+  color: $green-dark;
+  background-color: rgb(217, 217, 134);
 }
 
 .loader {

@@ -63,14 +63,20 @@ const LandingIntro = () => {
                 ref={overlayRef}
                 className={classes.intro_title_overlay}
               ></span>
-              Unpacking Sustainability Through Design: A Faculty Roundtable on
-              the MIAD Logics
+              Unpacking Sustainability Through Design: Exploring Space,
+              Structure, and Minimalism
+              {/* Unpacking Sustainability Through Design: A Faculty Roundtable on
+              the MIAD Logics */}
             </h2>
             <p className={classes.intro_item_content_text}>
-              At La Salle’s School of Architecture (ETSALS), sustainability
+              We promote architecture that respects the planet and elevates the
+              human experience. Through innovative, sustainable design, we help
+              shape environments that are energy-efficient, future-ready, and
+              deeply connected to their surroundings.
+              {/* At La Salle’s School of Architecture (ETSALS), sustainability
               isn’t a separate class. It’s a way of thinking. The Master in
               Integrated Architectural Design (MIAD) program organizes its
-              approach around five core &quot;logics&quot;
+              approach around five core &quot;logics&quot; */}
             </p>
           </div>
 

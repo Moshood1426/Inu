@@ -61,22 +61,41 @@ const About = () => {
             mission is to inspire, educate, and spark meaningful conversations
             about the role of architecture in our lives
           </p>
+          <p>
+            We intend to promote creation of architecture that respects the
+            planet and elevates the human experience. Through innovative,
+            sustainable design, we help shape environments that are
+            energy-efficient, future-ready, and deeply connected to their
+            surroundings. Explore our work and discover how thoughtful design
+            can make a lasting impact.
+          </p>
         </section>
 
         <section>
           <h5>What You&apos;ll Find Here</h5>
+          <p>
+            Discover a curated collection of sustainable design projects,
+            insights into our creative process, and conversations shaping the
+            future of architecture. From concept sketches to completed works,
+            this space offers a window into how we blend form, function, and
+            environmental responsibility. Whether you're a fellow designer, a
+            student, or simply passionate about purposeful spaces — there's
+            something here for you.
+          </p>
           <ul>
             <li>
-              In-depth articles and analysis on architectural trends,
+              - In-depth articles and analysis on architectural trends,
               technologies, and innovations
             </li>
-            <li>Stories of remarkable buildings, architects, and designers </li>
             <li>
-              Insights into sustainable design, urban planning, and social
+              - Stories of remarkable buildings, architects, and designers{" "}
+            </li>
+            <li>
+              - Insights into sustainable design, urban planning, and social
               impact{" "}
             </li>
             <li>
-              A curated selection of inspiring projects, images, and resource
+              - A curated selection of inspiring projects, images, and resource
             </li>
           </ul>
           <p></p>
@@ -85,29 +104,41 @@ const About = () => {
         <section>
           <h5>Our Approach</h5>
           <p>
+            At the heart of our practice is a commitment to sustainability
+            through thoughtful, purposeful design. We believe architecture
+            should not only serve its immediate function but also contribute
+            positively to the environment and the communities it inhabits. Our
+            approach blends innovative technologies, local materials, and
+            passive design strategies to create spaces that are efficient,
+            enduring, and responsive to their surroundings. Collaboration is
+            key—we work closely with clients, consultants, and communities to
+            ensure every project reflects shared values and long-term vision.
+          </p>
+          <p>
             We&apos;re committed to fostering a community that values
             creativity, critical thinking, and curiosity. Our content is crafted
             to be informative, engaging, and thought-provoking, with a focus on
             showcasing diverse perspectives and experiences.{" "}
           </p>
+          <p></p>
         </section>
 
         <section>
-          <h5>Join The Conversation</h5>
+          <h5>Stay Connected</h5>
           <p>
-            Whether you&apos;re an architect, designer, student, or simply
-            someone who appreciates the built environment, we invite you to join
-            our community. Share your thoughts, ask questions, and let&apos;s
-            explore the world of architecture together.
+            If thoughtful design and sustainable innovation inspire you, join
+            our growing community. Our newsletter delivers project updates,
+            behind-the-scenes stories, and ideas shaping the future of
+            architecture—right to your inbox.
           </p>
         </section>
 
-        <Link href={`/articles`}>
+        <Link href={`/contact`}>
           <div className={classes.about_next}>
             <small>
-              LEARN MORE <IoIosArrowRoundForward />
+              JOIN US <IoIosArrowRoundForward />
             </small>
-            <p>Explore our articles and projects</p>
+            <p>Sign up and stay part of the conversation.</p>
           </div>
         </Link>
       </div>
