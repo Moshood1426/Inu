@@ -78,9 +78,9 @@ const About = () => {
             insights into our creative process, and conversations shaping the
             future of architecture. From concept sketches to completed works,
             this space offers a window into how we blend form, function, and
-            environmental responsibility. Whether you're a fellow designer, a
-            student, or simply passionate about purposeful spaces — there's
-            something here for you.
+            environmental responsibility. Whether you&apos;re a fellow designer,
+            a student, or simply passionate about purposeful spaces —
+            there&apos;s something here for you.
           </p>
           <ul>
             <li>

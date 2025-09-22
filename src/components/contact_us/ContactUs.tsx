@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import FormInput from "../general/formInput/FormInput";
 import classes from "./ContactUs.module.scss";
-import { setServers } from "dns";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
