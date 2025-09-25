@@ -36,12 +36,12 @@ const ContactUs = () => {
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
 
-    setLoading(true);
-
     if (!formData.email || !formData.firstName || !formData.lastName) {
       setErrors(true);
       return;
     }
+
+    setLoading(true);
 
     setTimeout(() => {
       setSuccess(true);
