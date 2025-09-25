@@ -17,16 +17,16 @@ const articles = [
   {
     id: 2,
     category: "program review",
-    date: "May 15, 2025",
+    date: "May 22, 2025",
     title:
       "From Abstract to Tangible: The MIAD Program's Pedagogical Framework",
-    time: "19 mins read",
+    time: "15 mins read",
     img: "/images/web-img-3.jpg",
   },
   {
     id: 3,
     category: "program review",
-    date: "January 01, 2022",
+    date: "June 10, 2025",
     title:
       "Architecture as an 'Agent of Change': Communication and Advocacy in the Mass Media Era",
     time: "19 mins read",
@@ -35,7 +35,7 @@ const articles = [
   {
     id: 4,
     category: "Personal",
-    date: "January 01, 2022",
+    date: "   June 18, 2025",
     title: "My Journey LaSalle Experience",
     time: "19 mins read",
     img: "/images/web-img-2.jpg",
